@@ -1,19 +1,29 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
     <div>
       <footer className="footer footer-horizontal footer-center bg-[#13131310] text-black rounded p-10">
         <nav className="grid grid-flow-col gap-4 list-none">
-          <li className="text-[14px] font-semibold hover:text-[#23be0a] cursor-pointer">
-              <a>Home</a>
-            </li>
-            <li className="text-[14px] font-semibold hover:text-[#23be0a] cursor-pointer">
-              <a>Listed Books</a>
-            </li>
-            <li className="text-[14px] font-semibold hover:text-[#23be0a] cursor-pointer">
-              <a>Pages to Read</a>
-            </li>
+          <Link
+            to="/"
+            className="text-[14px] font-semibold hover:text-[#23be0a]"
+          >
+            Home
+          </Link>
+          <Link
+            to="/about"
+            className="text-[14px] font-semibold hover:text-[#23be0a]"
+          >
+            Listed Books
+          </Link>
+          <Link
+            to="/pages"
+            className="text-[14px] font-semibold hover:text-[#23be0a]"
+          >
+            Pages to Read
+          </Link>
         </nav>
         <nav>
           <div className="grid grid-flow-col gap-4">
@@ -54,7 +64,8 @@ const Footer = () => {
         </nav>
         <aside>
           <p>
-            Copyright © {new Date().getFullYear()} - All right reserved by Shanto
+            Copyright © {new Date().getFullYear()} - All right reserved by
+            Shanto
           </p>
         </aside>
       </footer>
