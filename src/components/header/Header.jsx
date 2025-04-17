@@ -31,10 +31,24 @@ const Header = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content  rounded-box z-1 mt-3 w-52 pl-4 shadow bg-white space-y-[2px]"
           >
-            <Link to='/' className="text-[14px] font-semibold hover:text-[#23be0a]">Home
+            <Link
+              to="/"
+              className="text-[14px] font-semibold hover:text-[#23be0a]"
+            >
+              Home
             </Link>
-            <Link to='/about' className="text-[14px] font-semibold hover:text-[#23be0a]">Listed Books</Link>
-            <Link to='/pages' className="text-[14px] font-semibold hover:text-[#23be0a]">Pages to Read</Link>
+            <Link
+              to="/about"
+              className="text-[14px] font-semibold hover:text-[#23be0a]"
+            >
+              Listed Books
+            </Link>
+            <Link
+              to="/pages"
+              className="text-[14px] font-semibold hover:text-[#23be0a]"
+            >
+              Pages to Read
+            </Link>
           </ul>
         </div>
         <a href="/" className="text-2xl font-bold">
@@ -43,9 +57,24 @@ const Header = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-6">
-        <Link to='/' className="text-[14px] font-semibold hover:text-[#23be0a]">Home</Link>
-            <Link to='/about' className="text-[14px] font-semibold hover:text-[#23be0a]">Listed Books</Link>
-            <Link to='/pages' className="text-[14px] font-semibold hover:text-[#23be0a]">Pages to Read</Link>
+          <Link
+            to="/"
+            className="text-[14px] font-semibold hover:text-[#23be0a]"
+          >
+            Home
+          </Link>
+          <Link
+            to="/about"
+            className="text-[14px] font-semibold hover:text-[#23be0a]"
+          >
+            Listed Books
+          </Link>
+          <Link
+            to="/pages"
+            className="text-[14px] font-semibold hover:text-[#23be0a]"
+          >
+            Pages to Read
+          </Link>
         </ul>
       </div>
       <div className="navbar-end">
