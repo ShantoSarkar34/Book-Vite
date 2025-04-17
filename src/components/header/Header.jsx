@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 
 const Header = () => {
   return (
@@ -31,24 +31,36 @@ const Header = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content  rounded-box z-1 mt-3 w-52 pl-4 shadow bg-white space-y-[2px]"
           >
-            <Link
+            <NavLink
               to="/"
-              className="text-[14px] font-semibold hover:text-[#23be0a]"
+              className={({ isActive }) =>
+                `text-[14px] font-semibold hover:text-[#23be0a] ${
+                  isActive ? "text-[#23be0a]" : "text-black"
+                }`
+              }
             >
               Home
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/about"
-              className="text-[14px] font-semibold hover:text-[#23be0a]"
+              className={({ isActive }) =>
+                `text-[14px] font-semibold hover:text-[#23be0a] ${
+                  isActive ? "text-[#23be0a]" : "text-black"
+                }`
+              }
             >
               Listed Books
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/pages"
-              className="text-[14px] font-semibold hover:text-[#23be0a]"
+              className={({ isActive }) =>
+                `text-[14px] font-semibold hover:text-[#23be0a] ${
+                  isActive ? "text-[#23be0a]" : "text-black"
+                }`
+              }
             >
               Pages to Read
-            </Link>
+            </NavLink>
           </ul>
         </div>
         <a href="/" className="text-2xl font-bold">
@@ -57,24 +69,36 @@ const Header = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-6">
-          <Link
+          <NavLink
             to="/"
-            className="text-[14px] font-semibold hover:text-[#23be0a]"
+            className={({ isActive }) =>
+              `text-[14px] font-semibold hover:text-[#23be0a] ${
+                isActive ? "text-[#23be0a]" : "text-black"
+              }`
+            }
           >
             Home
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/about"
-            className="text-[14px] font-semibold hover:text-[#23be0a]"
+            className={({ isActive }) =>
+              `text-[14px] font-semibold hover:text-[#23be0a] ${
+                isActive ? "text-[#23be0a]" : "text-black"
+              }`
+            }
           >
             Listed Books
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/pages"
-            className="text-[14px] font-semibold hover:text-[#23be0a]"
+            className={({ isActive }) =>
+              `text-[14px] font-semibold hover:text-[#23be0a] ${
+                isActive ? "text-[#23be0a]" : "text-black"
+              }`
+            }
           >
             Pages to Read
-          </Link>
+          </NavLink>
         </ul>
       </div>
       <div className="navbar-end">

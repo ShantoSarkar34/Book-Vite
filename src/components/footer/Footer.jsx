@@ -1,29 +1,41 @@
 import React from "react";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 
 const Footer = () => {
   return (
     <div>
       <footer className="footer footer-horizontal footer-center bg-[#13131310] text-black rounded p-10">
         <nav className="grid grid-flow-col gap-4 list-none">
-          <Link
+          <NavLink
             to="/"
-            className="text-[14px] font-semibold hover:text-[#23be0a]"
+            className={({ isActive }) =>
+              `text-[14px] font-semibold hover:text-[#23be0a] ${
+                isActive ? "text-[#23be0a]" : "text-black"
+              }`
+            }
           >
             Home
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/about"
-            className="text-[14px] font-semibold hover:text-[#23be0a]"
+            className={({ isActive }) =>
+              `text-[14px] font-semibold hover:text-[#23be0a] ${
+                isActive ? "text-[#23be0a]" : "text-black"
+              }`
+            }
           >
             Listed Books
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/pages"
-            className="text-[14px] font-semibold hover:text-[#23be0a]"
+            className={({ isActive }) =>
+              `text-[14px] font-semibold hover:text-[#23be0a] ${
+                isActive ? "text-[#23be0a]" : "text-black"
+              }`
+            }
           >
             Pages to Read
-          </Link>
+          </NavLink>
         </nav>
         <nav>
           <div className="grid grid-flow-col gap-4">
