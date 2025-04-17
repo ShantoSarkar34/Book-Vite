@@ -13,7 +13,7 @@ const Banner = () => {
         />
         </div>
         <div>
-          <h1 className=" text-[28px] lg:text-[56px] text-center lg:text-start font-bold text-[#131313] ">Books to freshen up <br /> your bookshelf</h1>
+          <h1 className=" text-[24px] lg:text-[56px] text-center lg:text-start font-bold text-[#131313] ">Books to freshen up <br /> your bookshelf</h1>
           <div className="mt-[20px] lg:mt-[48px] flex justify-center lg:justify-start">
           <button className="btn border-none shadow-none bg-[#23BE0A]">View The List</button>
 
