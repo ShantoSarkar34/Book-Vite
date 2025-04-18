@@ -2,7 +2,8 @@ import React from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { FaRegUser } from "react-icons/fa";
 import { SlDocs } from "react-icons/sl";
-import { IoEyeOutline, IoIosStarHalf } from "react-icons/io5";
+import { IoEyeOutline } from "react-icons/io5";
+import { FaRegStarHalfStroke } from "react-icons/fa6";
 
 const WishBooks = ({ wish }) => {
   const {
@@ -71,7 +72,10 @@ const WishBooks = ({ wish }) => {
             <p className="text-[#328EFF] text-[16px]">Caregory: Classic</p>
           </div>
           <div className="bg-[#FFAC3315] py-[11px] px-5 lg:px-6 rounded-full">
-            <p className="text-[#FFAC33] text-[16px]"> Rating: {rating}</p>
+            <p className="text-[#FFAC33] text-[16px] flex items-center gap-2">
+              {" "}
+              Rating: {rating} <FaRegStarHalfStroke />
+            </p>
           </div>
           <button className="flex items-center gap-2 bg-[#23BE0A] py-[10px] px-5 rounded-full text-white">
             <IoEyeOutline className="text-[18px]" />

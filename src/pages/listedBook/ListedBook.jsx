@@ -23,7 +23,6 @@ const ListedBook = () => {
       <h1 className="text-center text-[20px] lg:text-[40px] font-bold text-[#131313] mb-9">
         Books
       </h1>
-
       <div className="flex justify-center">
         <select
           defaultValue="Sort by :"
@@ -44,7 +43,6 @@ const ListedBook = () => {
           </option>
         </select>
       </div>
-
       <Tabs className="text-black">
         <TabList>
           <Tab>Wishlist Books</Tab>
@@ -52,7 +50,11 @@ const ListedBook = () => {
         </TabList>
 
         <TabPanel>
-          <h2>wished books : {wishlist.length}</h2>
+          <h2 className="text-[18px] font-semibold my-3 lg:my-6">
+            Total wished books :{" "}
+            <span className="text-[#23be0a]">{wishlist.length}</span>{" "}
+          </h2>
+
           <div className="space-y-6">
             {wishlist.map((wish) => (
               <WishBooks key={wish.bookId} wish={wish}></WishBooks>
