@@ -42,7 +42,7 @@ const Header = () => {
               Home
             </NavLink>
             <NavLink
-              to="/about"
+              to="/listedBook"
               className={({ isActive }) =>
                 `text-[14px] font-semibold hover:text-[#23be0a] ${
                   isActive ? "text-[#23be0a]" : "text-black"
@@ -72,7 +72,7 @@ const Header = () => {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              `text-[14px] font-semibold hover:text-[#23be0a] ${
+              `text-[14px]  font-semibold hover:text-[#23be0a] transition-all duration-100  ${
                 isActive ? "text-[#23be0a]" : "text-black"
               }`
             }
@@ -80,9 +80,9 @@ const Header = () => {
             Home
           </NavLink>
           <NavLink
-            to="/about"
+            to="/listedBook"
             className={({ isActive }) =>
-              `text-[14px] font-semibold hover:text-[#23be0a] ${
+              `text-[14px] font-semibold hover:text-[#23be0a]  transition-all duration-100  ${
                 isActive ? "text-[#23be0a]" : "text-black"
               }`
             }
@@ -92,8 +92,8 @@ const Header = () => {
           <NavLink
             to="/pages"
             className={({ isActive }) =>
-              `text-[14px] font-semibold hover:text-[#23be0a] ${
-                isActive ? "text-[#23be0a]" : "text-black"
+              `text-[14px] font-semibold hover:text-[#23be0a] pb-[1px] transition-all duration-100 ${
+                isActive ? "text-[#23be0a] " : "text-black"
               }`
             }
           >

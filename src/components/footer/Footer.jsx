@@ -17,7 +17,7 @@ const Footer = () => {
             Home
           </NavLink>
           <NavLink
-            to="/about"
+            to="/listedBook"
             className={({ isActive }) =>
               `text-[14px] font-semibold hover:text-[#23be0a] ${
                 isActive ? "text-[#23be0a]" : "text-black"

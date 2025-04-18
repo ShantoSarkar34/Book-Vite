@@ -1,5 +1,6 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router";
+import { addToStoredDB } from "../../utility/addToDB";
 
 const BookDetails = () => {
   const { id } = useParams();
@@ -17,6 +18,10 @@ const BookDetails = () => {
     yearOfPublishing,
     rating,
   } = singleData;
+
+  const handleMardAsRead = (id) => {
+    addToStoredDB(id);
+  };
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 py-20">
@@ -96,7 +101,12 @@ const BookDetails = () => {
           <button className="py-2 px-4 lg:px-5 rounded-sm text-white font-semibold text-[12px] lg:text-[14px] cursor-pointer hover:shadow-sm shadow-[#23be0a] bg-[#23be0a]">
             Read Now
           </button>
-          <button className="py-2 px-4 lg:px-5 rounded-sm text-white font-semibold text-[12px] lg:text-[14px] cursor-pointer hover:shadow-sm shadow-[#59C6D2] bg-[#59C6D2]">
+          <button
+            onClick={() => {
+              handleMardAsRead(id);
+            }}
+            className="py-2 px-4 lg:px-5 rounded-sm text-white font-semibold text-[12px] lg:text-[14px] cursor-pointer hover:shadow-sm shadow-[#59C6D2] bg-[#59C6D2]"
+          >
             Add to Wishlist
           </button>
         </div>
