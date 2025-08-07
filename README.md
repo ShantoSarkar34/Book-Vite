@@ -1,12 +1,34 @@
-# React + Vite
+# 📚 Book Vibe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **Book Vibe** — an elegant and user-friendly platform where readers can **explore, read, and purchase books** online. Designed for book lovers, this website delivers a seamless reading experience with modern UI and intuitive features.
 
-Currently, two official plugins are available:
+🌐 **Live Site**: [https://book-vite.surge.sh/](https://book-vite.surge.sh/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🧾 Browse a curated list of books by title or category
+- 📖 Read full books online with smooth navigation
+- 🛍️ Add books to your cart and purchase easily
+- 🔍 Fast search and filtering options
+- 🧩 Fully responsive for mobile, tablet, and desktop
+
+---
+
+## ⚙️ Tech Stack
+
+| Technology    | Description                    |
+|---------------|--------------------------------|
+| **React**     | Frontend library                |
+| **TailwindCSS** | Styling and responsive layout |
+| **JSON API**  | Book data and app logic         |
+| **Surge**     | Live deployment platform        |
+
+---
+
+## 🖼️ Preview
+
+![Book Vibe Preview](https://i.ibb.co/album/your-image-link.jpg) <!-- Replace with an actual screenshot if you have one -->
+
+---

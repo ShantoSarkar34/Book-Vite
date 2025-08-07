@@ -51,7 +51,7 @@ const WishBooks = ({ wish }) => {
             </h6>
           </div>
         </div>
-        <div className="border-b border-[#13131315] w-full flex items-center gap-4 lg:gap-6 py-[18px]">
+        <div className="border-b border-[#13131315] w-full flex items-center gap-4 lg:gap-6 py-[18px] flex-wrap">
           <div className="flex items-center gap-1">
             <FaRegUser className="text-[#13131360]" />
             <h6 className="text-[#13131380] text-[16px]">
